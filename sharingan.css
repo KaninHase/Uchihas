@@ -1,0 +1,16 @@
+body {
+  background: #fff;
+  font-size: 30px;
+  color: black;
+  font-weight: 800;
+  font-weight: bolder;
+  font-family: 'Hello Ketta', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 25px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow-x: hidden;
+}

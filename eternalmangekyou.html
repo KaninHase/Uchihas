@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Sharingan</title>
+
+        <!-- Bootstrap CSS -->
+        <!-- Icon -->
+        <!-- Print Icon -->
+        <!-- Slicknav -->
+        <!-- Nivo Lightbox -->
+        <!-- Animate -->
+        <!-- Second Style -->
+        <!--<link rel="stylesheet" type="text/css" href="css/sharingan-primary3.css">-->
+        <!-- Responsive Style -->
+        <!--Style for Clock -->
+        <!-- Social Style -->
+        <!-- Footer Style -->
+        <!-- WhatsApp -->
+    <!-- Main Style -->
+    <!--<link rel="stylesheet" type="text/css" href="css/sharingan-primary.css">-->
+    <!-- Sharingan Style -->
+    <link rel="stylesheet" type="text/css" href="css/eternal.css">
+
+  </head>
+  <body>
+
+    <div id="container">
+
+      <nav>
+        <div id="logo">
+          Sharingan
+        </div>
+        <ul>
+          <li><a href="sharingan.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Gallery &nbsp;<i class="fa fa-caret-down"></i></a>
+            <div class="dd">
+              <div id="up_arrow"></div>
+            <ul>
+
+              <li><a href="ko.html">Obito Uchiha/Kakashi Hatake</a></li>
+              <li><a href="madara.html">Madara Uchiha</a></li>
+              <li><a href="shisui.html">Shisui Uchiha</a></li>
+              <li><a href="itachi.html">Itachi Uchiha</a></li>
+              <li><a href="sasuke.html">Sasuke Uchiha</a></li>
+              <li><a href="eternalmangekyou.html">Mangekyou Eterno</a></li>
+            </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="eternal-mangekyou-sharingan">
+          <div class="eye-and-reflection-container">
+            <div class="eye-container">
+              <div class="eye circle madara-eye m-ems">
+                <div class="glare circle"></div>
+                <div class="inner-eye circle">
+                  <div class="tag-container">
+                    <div class="tag circle">
+                      <div class="tag-line"></div>
+                    </div>
+                  </div>
+                  <div class="tag-container">
+                    <div class="tag circle">
+                      <div class="tag-line"></div>
+                    </div>
+                  </div>
+                  <div class="tag-container">
+                    <div class="tag circle">
+                      <div class="tag-line"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>&ambp;&ambp;</p>
+          <div class="eye-and-reflection-container">
+            <div class="eye-container">
+              <div class="eye circle sasuke-eye s-ems">
+                <div class="glare circle"></div>
+                <div class="inner-eye circle">
+                  <div class="tag-container">
+                    <div class="tag circle"></div>
+                  </div>
+                  <div class="tag-container">
+                    <div class="tag circle"></div>
+                  </div>
+                  <div class="tag-container">
+                    <div class="tag circle"></div>
+                  </div>
+                  <div class="ems-tags">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="a-sharingan-container">
+<div class="sharingan-descriptionNeon">
+  <h1>Sharingan</h1>
+  <h3>Eternal mangekyou Sharingan (永遠の万華鏡写輪眼, Eien no Mangekyō Sharingan)</h3>
+  <p>Una forma avanzada del Mangekyou Sharingan, y se obtiene a través de la extirpación e implantación del Mangekyou de otro Uchiha, como bien lo muestra el caso de Uchiha Sasuke y Uchiha Madara. Este es el Sharingan perfecto, ya que ayuda al usuario a no perder la "luz" de sus ojos. Los de Sasuke fueron a través de la implantación de su hermano Uchiha Itachi, mientras Uchiha Izuna los confió a su hermano Uchiha Madara. </p>
+</div>
+</div>
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+    <audio controls autoplay hidden>
+      <source src="audio/mangekyo-sharingan.ogg" type="audio/ogg">
+      <source src="audio/mangekyo-sharingan.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="preloader">
+      <div class="loader-sharingan">
+         <div class="circle-sharingan">
+          <div class="inner-sharingan">
+          <div class="tomoe"></div>
+          <div class="tomoe"></div>
+          <div class="tomoe"></div>
+          <div class="circles"></div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <style>
+
+    /** Pre-loader**/
+    #preloader {
+      position: absolute;
+      background: linear-gradient(0deg, #710c04 0%, #1f1f1f 100%)no-repeat;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999999999;
+    }
+
+    .circle-sharingan {
+      background: #b30000;
+      width: 8em;
+      height: 8em;
+      position: absolute;
+    	top: 45%;
+    	left: 45%;
+      border: 5px #000 solid;
+      animation: spin 4s ease-in-out, shine 4s ease-in-out;
+    }
+
+    .circle-sharingan .inner-sharingan {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 4em;
+      height: 4em;
+      border: 4px rgba(110, 13, 13, 0.5) solid;
+    }
+
+    .circle-sharingan,
+    .tomoe,
+    .circles,
+    .inner-sharingan {
+      border-radius: 50%;
+    }
+
+    .tomoe,
+    .circles {
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      background: #000;
+      z-index: 2;
+    }
+
+    .circle-sharingan .tomoe:nth-child(1) {
+      top: -0.5em;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .circle-sharingan .tomoe::before {
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+      top: -0.5em;
+      width: 1.9em;
+      height: 0.9em;
+      border-left: 16px solid #000;
+      border-radius: 100% 0 0 0;
+    }
+
+    .circle-sharingan .tomoe:nth-child(2) {
+      bottom: 0.5em;
+      left: -0.3em;
+      transform: rotate(-120deg);
+    }
+
+    .circle-sharingan .tomoe:nth-child(3) {
+      bottom: 0.5em;
+      right: -0.3em;
+      transform: rotate(120deg);
+    }
+
+    .circle-sharingan .circles, .circles {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1.5em;
+      height: 1.5em;
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(720deg);
+      }
+    }
+
+    @keyframes shine {
+      0% {
+        background: #ff0606;
+        opacity: 0;
+      }
+      50% {
+        background: #b30000;
+        box-shadow: 0 0 4px 4px #b30000;
+      }
+      100% {
+        box-shadow: none;
+        background: #ff0606;
+        opacity: 1;
+      }
+    }
+        /* Loaded */
+        .loaded #preloader{
+            -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: translateX(-100%);  /* IE 9 */
+                    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+            -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+
+        .loaded #preloader {
+            -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: translateX(100%);  /* IE 9 */
+                    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+
+        .loaded #preloader {
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-out;
+                    transition: all 0.3s ease-out;
+        }
+        .loaded #preloader {
+            visibility: hidden;
+
+            -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: translateY(-100%);  /* IE 9 */
+                    transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+            -webkit-transition: all 0.3s 1s ease-out;
+                    transition: all 0.3s 1s ease-out;
+        }
+    </style>
+
+
+       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/nivo-lightbox.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.min.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/carousel.js"></script>
+    <script  src="./preloader.js"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
+    <!-- partial -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="js/script.js"></script>
+
+  </body>
+</html>
