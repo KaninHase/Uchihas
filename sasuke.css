@@ -284,72 +284,70 @@ body::-webkit-scrollbar {
     transform: rotate(720deg);
   }
 }
-/* SHISUI EYES START */
 
-.eye:hover .sui {
-  animation: shisuiRotation 2.5s ease-in-out .8s;
-}
-
-.shisui-eye > .inner-eye {
-  width: 0;
-  height: 0;
-  background-color: black;
-  transform: rotate(-45deg);
+/* SASUKE EYES START */
+.sasuke-eye {
+  background: black;
 }
 
-.shisui-eye::after {
-  border: 12px solid rgba(110,12,12,1);
+.sasuke-eye > .inner-eye {
+  border: none;
+  width: 100%;
+  height: 100%;
 }
 
-.shisui-eye > .inner-eye > .tag-container > .tag {
-  width: 150px;
-  height: 150px;
-  top: -100px;
-  background-color: transparent;
-  left: -50px;
-  overflow: hidden;
-  transform-origin: 50px 100px;
+.sasuke-eye > .inner-eye > .tag-container > .tag {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(110,12,12,1) 39%, rgba(75,8,8,1) 60%, rgb(51, 32, 32) 100%);
+  border-radius: 0% 100% 0% 100%;
 }
 
-.shisui-eye > .inner-eye > .tag-container > .tag > div {
-  position: absolute;
-  width: 375px;
-  height: 96px;
-  top: 72px;
-  transform: rotate(-20deg);
-  transform-origin: 200px 0px;
-  left: -260px;
-  border-radius: 50%;
-  background-color: transparent;
-  border-top: 40px solid black;
-  border-bottom: none;
-  border-left: 20px solid transparent;
-  border-right: none;
+.sasuke-eye > .inner-eye > .tag-container:nth-child(3) > .tag {
+  border: 3px solid black;
 }
 
-.shisui-eye > .inner-eye > .tag-container:nth-child(2) {
-  transform: rotate(90deg);
-}
-.shisui-eye > .inner-eye > .tag-container:nth-child(3) {
-  transform: rotate(180deg);
-}
-.shisui-eye > .inner-eye > .tag-container:nth-child(4) {
-  transform: rotate(270deg);
-}
-
-.shisui-eye > .inner-eye > .tag-container > .tag::after {
+.sasuke-eye > .inner-eye > .tag-container > .tag::after {
   display: none;
 }
 
-@keyframes shisuiRotation {
-  0% {
-    transform: rotate(-45deg);
-  }
-  100% {
-    transform: rotate(675deg);
-  }
+.sasuke-eye > .inner-eye > .tag-container:nth-child(1) {
+  transform: rotate(45deg);
 }
-/* SHISUI EYES END */
+
+.sasuke-eye > .inner-eye > .tag-container:nth-child(2) {
+  transform: rotate(165deg);
+}
+
+.sasuke-eye > .inner-eye > .tag-container:nth-child(3) {
+  transform: rotate(285deg);
+}
+
+.sasuke-eye > .inner-eye > .tag-container:nth-child(3) > .tag::before,
+.sasuke-eye > .inner-eye > .tag-container:nth-child(3) > .tag::after {
+  position: absolute;
+  content: '';
+  display: block;
+  border: inherit;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: inherit;
+  margin: auto;
+  left: -4px;
+  top: -4px;
+}
+
+.sasuke-eye > .inner-eye > .tag-container:nth-child(3) > .tag::before {
+  transform: rotate(120deg);
+}
+
+.sasuke-eye > .inner-eye > .tag-container:nth-child(3) > .tag::after {
+  transform: rotate(240deg);
+}
+/* SASUKE EYE END */
+
 
 #menu-container {
   position:absolute;

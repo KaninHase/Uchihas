@@ -284,72 +284,91 @@ body::-webkit-scrollbar {
     transform: rotate(720deg);
   }
 }
-/* SHISUI EYES START */
 
-.eye:hover .sui {
-  animation: shisuiRotation 2.5s ease-in-out .8s;
+/* KAKASHI EYES START */
+.kakashi-eye {
+  background: radial-gradient(circle, rgba(110,12,12,1) 0%, rgba(110,12,12,1) 39%, rgba(75,8,8,1) 60%, rgba(0,0,0,1) 100%);
 }
 
-.shisui-eye > .inner-eye {
-  width: 0;
-  height: 0;
-  background-color: black;
-  transform: rotate(-45deg);
-}
-
-.shisui-eye::after {
-  border: 12px solid rgba(110,12,12,1);
-}
-
-.shisui-eye > .inner-eye > .tag-container > .tag {
-  width: 150px;
-  height: 150px;
-  top: -100px;
-  background-color: transparent;
-  left: -50px;
-  overflow: hidden;
-  transform-origin: 50px 100px;
-}
-
-.shisui-eye > .inner-eye > .tag-container > .tag > div {
+.kakashi-eye::after {
+  z-index: 1000000;
   position: absolute;
-  width: 375px;
-  height: 96px;
-  top: 72px;
-  transform: rotate(-20deg);
-  transform-origin: 200px 0px;
-  left: -260px;
+  content: '';
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  box-shadow: 0 0 20px rgb(143, 19, 19);
+  background-color: rgb(143, 19, 19);
+  background-clip: content-box;
+}
+
+.kakashi-eye > .inner-eye {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
-  border-top: 40px solid black;
-  border-bottom: none;
-  border-left: 20px solid transparent;
-  border-right: none;
 }
 
-.shisui-eye > .inner-eye > .tag-container:nth-child(2) {
-  transform: rotate(90deg);
-}
-.shisui-eye > .inner-eye > .tag-container:nth-child(3) {
-  transform: rotate(180deg);
-}
-.shisui-eye > .inner-eye > .tag-container:nth-child(4) {
-  transform: rotate(270deg);
+.kakashi-eye > .inner-eye > .tag-container {
+  position: absolute;
+  width: 200px;
+  height: 100%;
 }
 
-.shisui-eye > .inner-eye > .tag-container > .tag::after {
+.kakashi-eye > .inner-eye > .tag-container > .tag {
+  position: absolute;
+  margin-bottom: 0;
+  height: 200px;
+  width: 200px;
+  top: -40px;
+  position: absolute;
+  margin-bottom: 0;
+  height: 100px;
+  width: 200px;
+  border-radius: 0;
+  clip-path: ellipse(25px 140px at 100px 140px);
+}
+
+.kakashi-eye > .inner-eye > .tag-container > .tag::after {
   display: none;
 }
 
-@keyframes shisuiRotation {
-  0% {
-    transform: rotate(-45deg);
-  }
-  100% {
-    transform: rotate(675deg);
-  }
+.kakashi-eye > .inner-eye > .tag-container > .tag:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  right: 0;
+  background-color: black;
+  clip-path: none;
+  overflow: hidden;
+  background-color: transparent !important;
 }
-/* SHISUI EYES END */
+
+.kakashi-eye > .inner-eye > .tag-container > .tag:nth-child(2) > .tag-circle {
+  top: -11px;
+  position: relative;
+  left: -140px;
+  width: 200px;
+  height: 170px;
+  border-radius: 50%;
+  border: 40px solid black;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  margin: 0;
+}
+
+.kakashi-eye > .inner-eye > .tag-container:nth-child(2) {
+  transform: rotate(120deg);
+}
+
+.kakashi-eye > .inner-eye > .tag-container:nth-child(3) {
+  transform: rotate(240deg);
+}
+/* KAKASHI EYES END */
+
 
 #menu-container {
   position:absolute;

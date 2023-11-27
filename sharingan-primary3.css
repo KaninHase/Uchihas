@@ -1,0 +1,164 @@
+#container {
+  position:absolute;
+  font-family: "Bodoni MT", regular;
+  width:80%;
+  top: 30px;
+  background-color:black;
+  box-shadow: -1px -1px 8px red,2px -1px 8px red;
+  border-radius: 30px;
+  animation: pulse-red 1s infinite;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(236, 3, 4, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(236, 3, 4, 0.7);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(236, 3, 4, 0.7);
+  }
+}
+
+#container > nav {
+  width:100%;
+  display:flex;
+  max-height:60px;
+  border-radius: 30px;
+}
+#logo {
+  line-height:60px;
+  font-size:30px;
+  padding: 0 50px;
+  color: white;
+  width:40%;
+  letter-spacing:2px;
+  text-shadow:2px 2px 5px;
+}
+#container > nav > ul {
+  margin:0;
+  paddding:0;
+  list-style-type:none;
+  display:flex;
+  border-radius: 30px;
+  position:absolute;
+    right:50px;
+/*   min-width:60%; */
+}
+#container > nav > ul > li {
+  line-height:60px;
+  margin: 0 0px;
+  padding:0;
+  text-align:center;
+  display:inline-block;
+  font-family: "Bodoni MT", boldregular;
+
+/*   background-color:black; */
+  min-width:120px;
+
+}
+#container > nav > ul > li > a {
+  position:relative;
+/*   background-color:red; */
+  margin: 0 20px;
+    color:#d1001c;
+}
+#container > nav > ul > li:hover {
+  border-bottom: 2px solid white;
+  background-color: rgba(124, 13, 14, 0.5);
+  border-radius: 70px;
+}
+#container > nav > ul > .dropdown:hover {
+  border-bottom:none;
+}
+#container > nav > ul > .dropdown:hover >  .dd
+{
+  display:block;
+  background-color: rgba(124, 13, 14, 0.5);
+}
+.dropdown:hover > a .fa-caret-down {
+  display:none;
+}
+a {
+  text-decoration:none;
+
+}
+
+#container > nav > ul > li > div {
+  position:absolute;
+  padding: 0 10px;
+
+  background-color:black;
+  display:none;
+  background-color:aliceblue;
+  min-width:100px;
+}
+
+#container > nav > ul > li > div > ul {
+  margin:0px 0 10px 0;
+  padding:0;
+  list-style:none;
+}
+#u_a_c {
+  position:relative;
+  width:100%;
+/*   background-color:red; */
+}
+#up_arrow {
+  position:relative;
+  width:20px;
+  height:20px;
+  left:42%;
+  top:-10px;
+  background-color: #ec0304;
+  transform:rotate(45deg);
+}
+#container > nav > ul > li> div > ul > li:hover {
+  background-color:rgba(0,0,0,0.2);
+}
+#container > nav > ul > li > div > ul > li > a {
+  padding : 5px;
+    color:black;
+}
+
+.a-sharingan-container {
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+    left: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.a-sharingan-container div {
+  padding: 20px;
+  margin: 10px;
+}
+
+
+.image-sharingan {
+    float: left;
+     width: 50%;
+     padding: 2%;
+     border: 4px white;
+    left: 150px;
+     position: absolute;
+}
+
+.sharingan-descriptionNeon {
+  float: right;
+     width: 45%;
+     padding: 2%;
+     color: black;
+     font-family: "Bodoni MT", regular;
+    text-shadow: white 0 0 10px;
+    right: 190px;
+    position: absolute;
+}
